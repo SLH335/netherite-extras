@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "additionalnetherite",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Additional Netherite",
+  "description": "A Fabric mod adding additional uses for Netherite.",
   "authors": [
-    "Me!"
+    "SLH"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://hafemann.xyz/",
+    "sources": "https://github.com/Brausekopp/additional-netherite"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPL-3.0",
+  "icon": "assets/additionalnetherite/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "xyz.hafemann.additionalnetherite.AdditionalNetherite"
+    ],
+    "client": [
+      "xyz.hafemann.additionalnetherite.AdditionalNetheriteClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "additionalnetherite.mixins.json"
   ],
 
   "depends": {
