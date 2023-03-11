@@ -4,9 +4,10 @@
   "package": "xyz.hafemann.additionalnetherite.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "NetheriteNuggetArmorMixin",
+    "NetheriteNuggetToolMixin"
   ],
   "client": [
-    "AdditionalNetheriteMixin"
   ],
   "injectors": {
     "defaultRequire": 1
