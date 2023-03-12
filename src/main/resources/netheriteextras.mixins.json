@@ -4,7 +4,7 @@
   "package": "xyz.hafemann.netheriteextras.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "HorseEntityMixin",
+    "NetheriteHorseArmorHorseEntityMixin",
     "NetheriteNuggetArmorMixin",
     "NetheriteNuggetToolMixin"
   ],

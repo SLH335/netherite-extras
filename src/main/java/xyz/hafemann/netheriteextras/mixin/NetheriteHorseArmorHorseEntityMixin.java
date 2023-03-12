@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import xyz.hafemann.netheriteextras.item.ModItems;
 
 @Mixin(AbstractHorseEntity.class)
-public abstract class HorseEntityMixin extends AnimalEntity {
-    protected HorseEntityMixin(EntityType<? extends AnimalEntity> entityType, World world) {
+public abstract class NetheriteHorseArmorHorseEntityMixin extends AnimalEntity {
+    protected NetheriteHorseArmorHorseEntityMixin(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
