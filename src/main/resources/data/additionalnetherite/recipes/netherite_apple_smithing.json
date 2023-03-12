@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "additionalnetherite:netherite_nugget"
+  },
+  "base": {
+    "item": "minecraft:golden_apple"
+  },
+  "result": {
+    "item": "additionalnetherite:netherite_apple"
+  }
+}
