@@ -13,3 +13,7 @@ Netherite Horse Armor better protects your horse from all damage sources, especi
 
 ### Netherite Apples
 Upgrade Golden Apples and Enchanted Golden Apples to Netherite, making them even stronger.
+
+### Totem of Neverdying
+Upgrade a Totem of Undying with Netherite to turn it into a Totem of Neverdying.
+It behaves like a regular Totem of Undying, except that it can be used four times instead of just once.

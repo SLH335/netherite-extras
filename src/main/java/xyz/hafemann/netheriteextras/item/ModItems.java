@@ -7,6 +7,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import xyz.hafemann.netheriteextras.NetheriteExtras;
 
 public class ModItems {
@@ -30,6 +31,8 @@ public class ModItems {
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 1), 1.0F)
                     .alwaysEdible().build()).fireproof()));
+    public static final Item TOTEM_OF_NEVERDYING = registerItem("totem_of_neverdying",
+            new Item(new Item.Settings().maxCount(1).maxDamage(4).rarity(Rarity.UNCOMMON).fireproof()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(NetheriteExtras.MOD_ID, name), item);
@@ -45,5 +48,7 @@ public class ModItems {
                 .register(content -> content.addAfter(Items.ENCHANTED_GOLDEN_APPLE, NETHERITE_APPLE));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register(content -> content.addAfter(NETHERITE_APPLE, ENCHANTED_NETHERITE_APPLE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
+                .register(content -> content.addAfter(Items.TOTEM_OF_UNDYING, TOTEM_OF_NEVERDYING));
     }
 }
