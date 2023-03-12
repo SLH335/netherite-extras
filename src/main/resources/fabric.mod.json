@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "additionalnetherite",
+  "id": "netheriteextras",
   "version": "${version}",
 
-  "name": "Additional Netherite",
-  "description": "A Fabric mod adding additional uses for Netherite.",
+  "name": "Netherite Extras",
+  "description": "A Minecraft Fabric mod adding extra uses for Netherite.",
   "authors": [
-    "SLH"
+    "SLH335"
   ],
   "contact": {
     "homepage": "https://hafemann.xyz/",
-    "sources": "https://github.com/Brausekopp/additional-netherite"
+    "sources": "https://github.com/SLH335/netherite-extras"
   },
 
   "license": "GPL-3.0",
-  "icon": "assets/additionalnetherite/icon.png",
+  "icon": "assets/netheriteextras/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "xyz.hafemann.additionalnetherite.AdditionalNetherite"
+      "xyz.hafemann.netheriteextras.NetheriteExtras"
     ],
     "client": [
-      "xyz.hafemann.additionalnetherite.AdditionalNetheriteClient"
+      "xyz.hafemann.netheriteextras.NetheriteExtrasClient"
     ]
   },
   "mixins": [
-    "additionalnetherite.mixins.json"
+    "netheriteextras.mixins.json"
   ],
 
   "depends": {

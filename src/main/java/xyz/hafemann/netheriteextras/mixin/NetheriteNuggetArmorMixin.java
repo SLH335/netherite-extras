@@ -1,4 +1,4 @@
-package xyz.hafemann.additionalnetherite.mixin;
+package xyz.hafemann.netheriteextras.mixin;
 
 import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.ItemStack;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import xyz.hafemann.additionalnetherite.item.ModItems;
+import xyz.hafemann.netheriteextras.item.ModItems;
 
 @Mixin(ArmorMaterials.class)
 public class NetheriteNuggetArmorMixin {

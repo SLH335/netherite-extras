@@ -1,4 +1,4 @@
-package xyz.hafemann.additionalnetherite.item;
+package xyz.hafemann.netheriteextras.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -7,7 +7,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import xyz.hafemann.additionalnetherite.AdditionalNetherite;
+import xyz.hafemann.netheriteextras.NetheriteExtras;
 
 public class ModItems {
 
@@ -32,11 +32,11 @@ public class ModItems {
                     .alwaysEdible().build()).fireproof()));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(AdditionalNetherite.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, new Identifier(NetheriteExtras.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        AdditionalNetherite.LOGGER.debug("Registering Mod Items for " + AdditionalNetherite.MOD_ID);
+        NetheriteExtras.LOGGER.debug("Registering Mod Items for " + NetheriteExtras.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register(content -> content.addAfter(Items.GOLD_NUGGET, NETHERITE_NUGGET));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)

@@ -1,3 +1,3 @@
-# Additional Netherite
+# Netherite Extras
 
-A Fabric mod adding additional uses for Netherite.
+A Minecraft Fabric mod adding extra uses for Netherite.

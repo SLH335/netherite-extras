@@ -1,8 +1,8 @@
-package xyz.hafemann.additionalnetherite.item;
+package xyz.hafemann.netheriteextras.item;
 
 import net.minecraft.item.HorseArmorItem;
 import net.minecraft.util.Identifier;
-import xyz.hafemann.additionalnetherite.AdditionalNetherite;
+import xyz.hafemann.netheriteextras.NetheriteExtras;
 
 public class NetheriteHorseArmorItem extends HorseArmorItem {
 
@@ -15,7 +15,7 @@ public class NetheriteHorseArmorItem extends HorseArmorItem {
 
     @Override
     public Identifier getEntityTexture() {
-        return new Identifier(AdditionalNetherite.MOD_ID, this.entityTexture);
+        return new Identifier(NetheriteExtras.MOD_ID, this.entityTexture);
     }
 
 }

@@ -1,4 +1,4 @@
-package xyz.hafemann.additionalnetherite.mixin;
+package xyz.hafemann.netheriteextras.mixin;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-import xyz.hafemann.additionalnetherite.item.ModItems;
+import xyz.hafemann.netheriteextras.item.ModItems;
 
 @Mixin(AbstractHorseEntity.class)
 public abstract class HorseEntityMixin extends AnimalEntity {

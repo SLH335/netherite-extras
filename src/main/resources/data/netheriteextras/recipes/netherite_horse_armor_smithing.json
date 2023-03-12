@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_ingot"
   },
   "base": {
-    "item": "minecraft:enchanted_golden_apple"
+    "item": "minecraft:diamond_horse_armor"
   },
   "result": {
-    "item": "additionalnetherite:enchanted_netherite_apple"
+    "item": "netheriteextras:netherite_horse_armor"
   }
 }
