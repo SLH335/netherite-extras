@@ -6,6 +6,7 @@ A Minecraft Fabric mod adding extra uses for Netherite.
 
 ### Netherite Nuggets
 Craft Netherite Ingots into Nuggets and use them as currency on multiplayer or to repair Netherite Tools.
+Additionally, Piglin Brutes have a 50% chance of dropping a Netherite Nugget on death.
 
 ### Netherite Horse Armor
 Upgrade Diamond Horse Armor to Netherite in the Smithing Table.
