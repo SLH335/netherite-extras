@@ -34,7 +34,8 @@ public abstract class NetheriteHorseArmorHorseEntityMixin extends AnimalEntity {
             }
 
             this.setOnFireFor(setOnFireFor);
-            if (this.damage(DamageSource.LAVA, damage)) {
+            DamageSource damageSource = this.getDamageSources().lava();
+            if (this.damage(damageSource, damage)) {
                 this.playSound(SoundEvents.ENTITY_GENERIC_BURN, 0.4F, 2.0F + this.random.nextFloat() * 0.4F);
             }
         }
