@@ -21,7 +21,7 @@ public class ModItems {
                     .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 3000, 0), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 2), 1.0F)
-                    .alwaysEdible().build()).fireproof()));
+                    .alwaysEdible().build()).rarity(Rarity.RARE).fireproof()));
     public static final Item ENCHANTED_NETHERITE_APPLE = registerItem("enchanted_netherite_apple",
             new EnchantedGoldenAppleItem(new Item.Settings().food((new FoodComponent.Builder()).hunger(6).saturationModifier(1.2F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 800, 2), 1.0F)
@@ -30,7 +30,7 @@ public class ModItems {
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 4800, 5), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 1), 1.0F)
-                    .alwaysEdible().build()).fireproof()));
+                    .alwaysEdible().build()).rarity(Rarity.EPIC).fireproof()));
     public static final Item TOTEM_OF_NEVERDYING = registerItem("totem_of_neverdying",
             new Item(new Item.Settings().maxCount(1).maxDamage(4).rarity(Rarity.UNCOMMON).fireproof()));
 
