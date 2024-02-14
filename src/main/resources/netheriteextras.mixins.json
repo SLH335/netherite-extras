@@ -4,6 +4,8 @@
   "package": "xyz.hafemann.netheriteextras.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "TotemUnbreakingEnchantableMixin",
+    "TotemEnchantableMixin",
     "NetheriteHorseArmorHorseEntityMixin",
     "NetheriteNuggetArmorMixin",
     "NetheriteNuggetToolMixin"
