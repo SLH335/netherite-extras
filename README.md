@@ -11,6 +11,15 @@ Most of the additions are quite powerful, but also very expensive. This makes th
 
 ## Features
 
+### NEW: Netherite Wolf Armor
+- Upgrade Wolf Armor to Netherite in the Smithing Table
+- Protects wolf completely, like normal Wolf Armor
+- Double durability of normal Wolf Armor
+- Can be repaired with Netherite Nuggets (each restores 1/4 durability)
+- Item is fireproof
+
+![Netherite Wolf Armor](https://cdn.modrinth.com/data/WRs6iRSw/images/e6b2bd92e67c245483c5341fbb101299fd493d96.png)
+
 ### Netherite Nuggets
 - Craft a Netherite Ingot into nine Nuggets
 - Use them to repair Netherite Tools
@@ -58,7 +67,7 @@ Most of the additions are quite powerful, but also very expensive. This makes th
 ## Recipes
 
 <p>
-<img alt="Smithing Recipes" src="https://cdn-raw.modrinth.com/data/WRs6iRSw/images/76b5e6e1ee96cb28d2967cff25eb06968ab1dd4e.png" title="Smithing Recipes">
+<img alt="Smithing Recipes" src="https://cdn.modrinth.com/data/WRs6iRSw/images/9c3a1c8616d791742c174ca2b4b1e74ba6122925.png" title="Smithing Recipes">
 
 <img alt="Crafting Recipes" src="https://cdn-raw.modrinth.com/data/WRs6iRSw/images/22aa688c4403b12d408d4a6c8014df5a79e36f82.png" title="Crafting Recipes">
 </p>
