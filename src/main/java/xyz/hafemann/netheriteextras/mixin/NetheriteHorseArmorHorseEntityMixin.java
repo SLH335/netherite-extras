@@ -19,25 +19,24 @@ public abstract class NetheriteHorseArmorHorseEntityMixin extends AnimalEntity {
 
     @Override
     public void setOnFireFromLava() {
-        if (!this.isFireImmune()) {
-            Item item;
-            int setOnFireFor = 15;
-            float damage = 4.0F;
+        if (this.isFireImmune()) {
+            return;
+        }
 
-            for (ItemStack itemStack : getArmorItems()) {
-                item = itemStack.getItem();
+        Item item;
+        int setOnFireFor = 15;
+        float damage = 4.0F;
 
-                if (item == ModItems.NETHERITE_HORSE_ARMOR) {
-                    setOnFireFor = 9;
-                    damage = 2.25F;
-                }
-            }
+        item = getBodyArmor().getItem();
+        if (item == ModItems.NETHERITE_HORSE_ARMOR) {
+            setOnFireFor = 6;
+            damage = 1.5F;
+        }
 
-            this.setOnFireFor(setOnFireFor);
-            DamageSource damageSource = this.getDamageSources().lava();
-            if (this.damage(damageSource, damage)) {
-                this.playSound(SoundEvents.ENTITY_GENERIC_BURN, 0.4F, 2.0F + this.random.nextFloat() * 0.4F);
-            }
+        this.setOnFireFor(setOnFireFor);
+        DamageSource damageSource = this.getDamageSources().lava();
+        if (this.damage(damageSource, damage)) {
+            this.playSound(SoundEvents.ENTITY_GENERIC_BURN, 0.4F, 2.0F + this.random.nextFloat() * 0.4F);
         }
     }
 }
