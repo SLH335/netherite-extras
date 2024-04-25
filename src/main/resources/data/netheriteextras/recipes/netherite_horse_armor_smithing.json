@@ -7,7 +7,8 @@
     "item": "minecraft:diamond_horse_armor"
   },
   "result": {
-    "item": "netheriteextras:netherite_horse_armor"
+    "count": 1,
+    "id": "netheriteextras:netherite_horse_armor"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

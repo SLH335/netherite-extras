@@ -7,7 +7,8 @@
     "item": "minecraft:totem_of_undying"
   },
   "result": {
-    "item": "netheriteextras:totem_of_neverdying"
+    "count": 1,
+    "id": "netheriteextras:totem_of_neverdying"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

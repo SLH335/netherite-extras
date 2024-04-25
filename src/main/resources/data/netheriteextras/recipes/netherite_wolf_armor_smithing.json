@@ -7,7 +7,8 @@
     "item": "minecraft:wolf_armor"
   },
   "result": {
-    "item": "netheriteextras:netherite_wolf_armor"
+    "count": 1,
+    "id": "netheriteextras:netherite_wolf_armor"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"
