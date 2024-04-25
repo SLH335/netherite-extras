@@ -18,6 +18,9 @@ public class ModItems {
             new Item(new Item.Settings().fireproof()));
     public static final Item NETHERITE_HORSE_ARMOR = registerItem("netherite_horse_armor",
             new NetheriteHorseArmorItem(new AnimalArmorItem.Settings().maxCount(1).fireproof()));
+    public static final Item NETHERITE_WOLF_ARMOR = registerItem("netherite_wolf_armor",
+            new NetheriteWolfArmorItem(new AnimalArmorItem.Settings().maxCount(1).fireproof()
+                    .maxDamage(ArmorItem.Type.BODY.getMaxDamage(8))));
     public static final Item NETHERITE_APPLE = registerItem("netherite_apple",
             new Item(new Item.Settings().food((new FoodComponent.Builder()).nutrition(6).saturationModifier(1.2F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1.0F)
@@ -47,6 +50,8 @@ public class ModItems {
                 .register(content -> content.addAfter(Items.GOLD_NUGGET, NETHERITE_NUGGET));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(content -> content.addAfter(Items.DIAMOND_HORSE_ARMOR, NETHERITE_HORSE_ARMOR));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
+                .register(content -> content.addAfter(Items.WOLF_ARMOR, NETHERITE_WOLF_ARMOR));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register(content -> content.addAfter(Items.ENCHANTED_GOLDEN_APPLE, NETHERITE_APPLE));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
