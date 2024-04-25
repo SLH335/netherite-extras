@@ -2,7 +2,6 @@ package xyz.hafemann.netheriteextras.mixin;
 
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -10,11 +9,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.hafemann.netheriteextras.item.ModItems;
 
+import java.util.function.Supplier;
+
 @Mixin(ToolMaterials.class)
 public class NetheriteNuggetToolMixin {
 
     @Shadow
-    private Lazy<Ingredient> repairIngredient;
+    private Supplier<Ingredient> repairIngredient;
 
     public NetheriteNuggetToolMixin() {
         this.repairIngredient = null;

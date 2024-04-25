@@ -1,6 +1,8 @@
 package xyz.hafemann.netheriteextras.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -15,22 +17,23 @@ public class ModItems {
     public static final Item NETHERITE_NUGGET = registerItem("netherite_nugget",
             new Item(new Item.Settings().fireproof()));
     public static final Item NETHERITE_HORSE_ARMOR = registerItem("netherite_horse_armor",
-            new NetheriteHorseArmorItem(15, "netherite", new HorseArmorItem.Settings().maxCount(1).fireproof()));
+            new NetheriteHorseArmorItem(new AnimalArmorItem.Settings().maxCount(1).fireproof()));
     public static final Item NETHERITE_APPLE = registerItem("netherite_apple",
-            new Item(new Item.Settings().food((new FoodComponent.Builder()).hunger(6).saturationModifier(1.2F)
+            new Item(new Item.Settings().food((new FoodComponent.Builder()).nutrition(6).saturationModifier(1.2F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 3000, 0), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 2), 1.0F)
                     .alwaysEdible().build()).rarity(Rarity.RARE).fireproof()));
     public static final Item ENCHANTED_NETHERITE_APPLE = registerItem("enchanted_netherite_apple",
-            new EnchantedGoldenAppleItem(new Item.Settings().food((new FoodComponent.Builder()).hunger(6).saturationModifier(1.2F)
+            new Item(new Item.Settings().food((new FoodComponent.Builder()).nutrition(6).saturationModifier(1.2F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 800, 2), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 10000, 1), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 12000, 0), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 4800, 5), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 1), 1.0F)
-                    .alwaysEdible().build()).rarity(Rarity.EPIC).fireproof()));
+                    .alwaysEdible().build()).rarity(Rarity.EPIC).fireproof()
+                    .component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)));
     public static final Item TOTEM_OF_NEVERDYING = registerItem("totem_of_neverdying",
             new Item(new Item.Settings().maxCount(1).maxDamage(4).rarity(Rarity.UNCOMMON).fireproof()));
 

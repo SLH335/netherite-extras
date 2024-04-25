@@ -1,21 +1,18 @@
 package xyz.hafemann.netheriteextras.item;
 
-import net.minecraft.item.HorseArmorItem;
+import net.minecraft.item.AnimalArmorItem;
+import net.minecraft.item.ArmorMaterials;
 import net.minecraft.util.Identifier;
 import xyz.hafemann.netheriteextras.NetheriteExtras;
 
-public class NetheriteHorseArmorItem extends HorseArmorItem {
-
-    private final String entityTexture;
-
-    public NetheriteHorseArmorItem(int bonus, String name, Settings settings) {
-        super(bonus, name, settings);
-        this.entityTexture = "textures/entity/horse/armor/horse_armor_" + name + ".png";
+public class NetheriteHorseArmorItem extends AnimalArmorItem {
+    public NetheriteHorseArmorItem(Settings settings) {
+        super(ArmorMaterials.NETHERITE, Type.EQUESTRIAN, false, settings);
     }
 
     @Override
     public Identifier getEntityTexture() {
-        return new Identifier(NetheriteExtras.MOD_ID, this.entityTexture);
+        String entityTexture = "textures/entity/horse/armor/horse_armor_netherite.png";
+        return new Identifier(NetheriteExtras.MOD_ID, entityTexture);
     }
-
 }

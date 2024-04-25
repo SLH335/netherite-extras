@@ -1,34 +1,22 @@
 package xyz.hafemann.netheriteextras.mixin;
 
-import net.minecraft.item.ArmorMaterials;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
+import net.minecraft.item.*;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import org.spongepowered.asm.mixin.injection.Redirect;
 import xyz.hafemann.netheriteextras.item.ModItems;
 
-@Mixin(ArmorMaterials.class)
+@Mixin(ArmorItem.class)
 public class NetheriteNuggetArmorMixin {
-    @Shadow
-    private Lazy<Ingredient> repairIngredientSupplier;
 
-    public NetheriteNuggetArmorMixin() {
-        this.repairIngredientSupplier = null;
-    }
-
-    @Inject(
-        method = "getRepairIngredient",
-        at = @At("HEAD"),
-        cancellable = true
-    )
-    private void onGetRepairIngredient(CallbackInfoReturnable<Ingredient> ci) {
-        if (this.repairIngredientSupplier.get().test(new ItemStack(Items.NETHERITE_INGOT))) {
-            ci.setReturnValue(Ingredient.ofItems(ModItems.NETHERITE_NUGGET));
+    @Redirect(method = "canRepair", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/Item;canRepair(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)Z"))
+    public boolean canRepair(Item instance, ItemStack stack, ItemStack ingredient) {
+        System.out.println(ingredient.getItem().toString());
+        ArmorMaterial material = ((ArmorItem) instance).getMaterial().value();
+        if (material.repairIngredient().get().test(Items.NETHERITE_INGOT.getDefaultStack())) {
+            return ingredient.getItem().equals(ModItems.NETHERITE_NUGGET);
+        } else {
+            return material.repairIngredient().get().test(ingredient) || instance.canRepair(stack, ingredient);
         }
     }
 }

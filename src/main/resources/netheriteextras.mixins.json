@@ -2,13 +2,12 @@
   "required": true,
   "minVersion": "0.8",
   "package": "xyz.hafemann.netheriteextras.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "TotemUnbreakingEnchantableMixin",
-    "TotemEnchantableMixin",
     "NetheriteHorseArmorHorseEntityMixin",
     "NetheriteNuggetArmorMixin",
-    "NetheriteNuggetToolMixin"
+    "NetheriteNuggetToolMixin",
+    "TotemEnchantableMixin"
   ],
   "client": [
   ],
