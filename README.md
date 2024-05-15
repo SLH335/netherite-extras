@@ -11,7 +11,7 @@ Most of the additions are quite powerful, but also very expensive. This makes th
 
 ## Features
 
-### NEW: Netherite Wolf Armor
+### NEW: Netherite Wolf Armor (1.20.5+)
 - Upgrade Wolf Armor to Netherite in the Smithing Table
 - Protects wolf completely, like normal Wolf Armor
 - Double durability of normal Wolf Armor
