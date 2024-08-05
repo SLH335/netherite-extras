@@ -13,6 +13,6 @@ public class NetheriteHorseArmorItem extends AnimalArmorItem {
     @Override
     public Identifier getEntityTexture() {
         String entityTexture = "textures/entity/horse/armor/horse_armor_netherite.png";
-        return new Identifier(NetheriteExtras.MOD_ID, entityTexture);
+        return Identifier.of(NetheriteExtras.MOD_ID, entityTexture);
     }
 }

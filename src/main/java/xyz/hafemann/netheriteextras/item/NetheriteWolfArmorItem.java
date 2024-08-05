@@ -13,6 +13,6 @@ public class NetheriteWolfArmorItem extends AnimalArmorItem {
     @Override
     public Identifier getEntityTexture() {
         String entityTexture = "textures/entity/wolf/wolf_armor_netherite.png";
-        return new Identifier(NetheriteExtras.MOD_ID, entityTexture);
+        return Identifier.of(NetheriteExtras.MOD_ID, entityTexture);
     }
 }

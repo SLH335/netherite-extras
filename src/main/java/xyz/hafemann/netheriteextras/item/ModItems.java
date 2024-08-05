@@ -41,7 +41,7 @@ public class ModItems {
             new Item(new Item.Settings().maxCount(1).maxDamage(4).rarity(Rarity.UNCOMMON).fireproof()));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(NetheriteExtras.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(NetheriteExtras.MOD_ID, name), item);
     }
 
     public static void registerModItems() {

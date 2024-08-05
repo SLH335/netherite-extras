@@ -9,6 +9,7 @@ import net.minecraft.entity.passive.WolfVariant;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvents;
@@ -28,6 +29,14 @@ public abstract class NetheriteWolfArmorEquipMixin
         VariantHolder<RegistryEntry<WolfVariant>> {
     protected NetheriteWolfArmorEquipMixin(EntityType<? extends TameableEntity> entityType, World world) {
         super(entityType, world);
+    }
+
+    @Inject(
+            method = "hasArmor",
+            at = @At("TAIL"),
+            cancellable = true)
+    public void hasArmor(CallbackInfoReturnable<Boolean> cir) {
+        cir.setReturnValue(this.getBodyArmor().isOf(Items.WOLF_ARMOR) || this.getBodyArmor().isOf(ModItems.NETHERITE_WOLF_ARMOR));
     }
 
     @Inject(
