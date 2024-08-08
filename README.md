@@ -7,6 +7,7 @@ Most of the additions are quite powerful, but also very expensive. This makes th
 <a href="https://modrinth.com/mod/fabric-api"><img alt="Fabric API" src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API"></a>
 
 <a href="https://modrinth.com/mod/netherite-extras"><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/netherite-extras?style=for-the-badge&logo=modrinth&label=Modrinth" title="Modrinth Downloads"></a>
+<a href="https://www.curseforge.com/minecraft/mc-mods/netherite-extras"><img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/1079904?style=for-the-badge&logo=curseforge&label=CurseForge"></a>
 <a href="https://github.com/SLH335/netherite-extras"><img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/SLH335/netherite-extras/total?style=for-the-badge&logo=github&label=GitHub" title="GitHub Downloads"></a>
 
 ## Features
