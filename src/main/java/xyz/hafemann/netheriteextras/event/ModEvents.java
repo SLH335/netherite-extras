@@ -1,7 +1,7 @@
 package xyz.hafemann.netheriteextras.event;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
-import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -23,7 +23,7 @@ public class ModEvents {
     public static void registerModEvents() {
         NetheriteExtras.LOGGER.debug("Registering Mod Events for " + NetheriteExtras.MOD_ID);
 
-        LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (EntityType.PIGLIN_BRUTE.getLootTableId() == key && source.isBuiltin()) {
                 LootPool.Builder pool = LootPool.builder()
                         .rolls(BinomialLootNumberProvider.create(1, NetheriteExtras.CONFIG.piglinBruteNetheriteNuggetDropChance()))
