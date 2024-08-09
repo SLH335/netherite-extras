@@ -26,6 +26,7 @@ Most of the additions are quite powerful, but also very expensive. This makes th
 - Use them to repair Netherite Tools
 - Use them as currency on multiplayer
 - Piglin Brutes have a 50% chance of dropping a Netherite Nugget on death
+- Drop chance is configurable with ModMenu or in config file
 - Item is fireproof
 
 ![Use Netherite Nuggets to repair Netherite Tools](https://cdn-raw.modrinth.com/data/WRs6iRSw/images/08a4e46cca18587b8a6a760567a7d4bc07ff5b2f.png)
