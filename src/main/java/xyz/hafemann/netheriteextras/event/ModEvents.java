@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.BinomialLootNumberProvider;
+import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
@@ -36,6 +37,9 @@ public class ModEvents {
             for (Hand hand : Hand.values()) {
                 ItemStack itemStack = livingEntity.getStackInHand(hand);
                 if (itemStack.isOf(ModItems.TOTEM_OF_NEVERDYING)) {
+                    if (damageSource.isIn(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+                        return false;
+                    }
                     if (livingEntity instanceof ServerPlayerEntity serverPlayerEntity) {
                         serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(ModItems.TOTEM_OF_NEVERDYING));
                         Criteria.USED_TOTEM.trigger(serverPlayerEntity, itemStack);
