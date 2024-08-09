@@ -4,5 +4,8 @@
   "item.netheriteextras.netherite_nugget": "Doubloon o' Blackbeard's alloy",
   "item.netheriteextras.netherite_horse_armor": "Blackbeard's brumby armor",
   "item.netheriteextras.netherite_wolf_armor": "Blackbeard's hound's clothin'",
-  "item.netheriteextras.totem_of_neverdying": "Jewel o' neverendin' life"
+  "item.netheriteextras.totem_of_neverdying": "Jewel o' neverendin' life",
+  "text.config.netheriteextras.title": "Netherite Extras",
+  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance": "Piglin Brute Netherite Nugget Drop Chance",
+  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance.tooltip": "Chance of Piglin Brutes dropping a Netherite Nugget when killed by a player"
 }

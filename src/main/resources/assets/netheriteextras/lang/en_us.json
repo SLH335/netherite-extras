@@ -4,5 +4,8 @@
   "item.netheriteextras.netherite_nugget": "Netherite Nugget",
   "item.netheriteextras.netherite_horse_armor": "Netherite Horse Armor",
   "item.netheriteextras.netherite_wolf_armor": "Netherite Wolf Armor",
-  "item.netheriteextras.totem_of_neverdying": "Totem of Neverdying"
+  "item.netheriteextras.totem_of_neverdying": "Totem of Neverdying",
+  "text.config.netheriteextras.title": "Netherite Extras",
+  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance": "Piglin Brute Netherite Nugget Drop Chance",
+  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance.tooltip": "Chance of Piglin Brutes dropping a Netherite Nugget when killed by a player"
 }

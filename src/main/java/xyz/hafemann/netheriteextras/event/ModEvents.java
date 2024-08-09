@@ -9,7 +9,6 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.BinomialLootNumberProvider;
@@ -26,7 +25,7 @@ public class ModEvents {
         LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
             if (EntityType.PIGLIN_BRUTE.getLootTableId() == key && source.isBuiltin()) {
                 LootPool.Builder pool = LootPool.builder()
-                        .rolls(BinomialLootNumberProvider.create(1, 0.5F))
+                        .rolls(BinomialLootNumberProvider.create(1, NetheriteExtras.CONFIG.piglinBruteNetheriteNuggetDropChance()))
                         .with(ItemEntry.builder(ModItems.NETHERITE_NUGGET).build());
 
                 tableBuilder.pool(pool);
