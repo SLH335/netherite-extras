@@ -11,6 +11,7 @@
     "TotemEnchantableMixin"
   ],
   "client": [
+    "TotemFloatingDisplayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
