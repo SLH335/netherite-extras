@@ -2,9 +2,8 @@
   "schemaVersion": 1,
   "id": "netheriteextras",
   "version": "${version}",
-
   "name": "Netherite Extras",
-  "description": "A Minecraft Fabric mod adding extra uses for Netherite.",
+  "description": "Adds extra uses for Netherite.",
   "authors": [
     "SLH"
   ],
@@ -12,29 +11,29 @@
     "homepage": "https://modrinth.com/mod/netherite-extras",
     "sources": "https://github.com/SLH335/netherite-extras"
   },
-
   "license": "GPL-3.0",
   "icon": "assets/netheriteextras/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
-      "xyz.hafemann.netheriteextras.NetheriteExtras"
+      "dev.slh.netheriteextras.NetheriteExtras"
     ],
     "client": [
-      "xyz.hafemann.netheriteextras.NetheriteExtrasClient"
+      "dev.slh.netheriteextras.client.NetheriteExtrasClient"
     ]
   },
   "mixins": [
-    "netheriteextras.mixins.json"
+    "netheriteextras.mixins.json",
+    {
+      "config": "netheriteextras.client.mixins.json",
+      "environment": "client"
+    }
   ],
-
   "depends": {
-    "fabricloader": ">=0.15.10",
-    "fabric-api": "*",
-    "minecraft": "~1.21",
-    "java": ">=21",
-    "owo": "*"
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
   },
   "suggests": {
     "modmenu": "*"

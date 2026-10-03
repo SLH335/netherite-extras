@@ -1,19 +1,13 @@
 {
   "required": true,
-  "minVersion": "0.8",
-  "package": "xyz.hafemann.netheriteextras.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "package": "dev.slh.netheriteextras.mixin",
+  "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "NetheriteHorseArmorHorseEntityMixin",
-    "NetheriteNuggetArmorMixin",
-    "NetheriteNuggetToolMixin",
-    "NetheriteWolfArmorEquipMixin",
-    "TotemEnchantableMixin"
-  ],
-  "client": [
-    "TotemFloatingDisplayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
   }
 }
