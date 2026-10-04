@@ -3,6 +3,9 @@
   "package": "dev.slh.netheriteextras.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "TotemDeathProtectionMixin",
+    "WolfArmorAbsorbMixin",
+    "WolfArmorRepairMixin"
   ],
   "injectors": {
     "defaultRequire": 1

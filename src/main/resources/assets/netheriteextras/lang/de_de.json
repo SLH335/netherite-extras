@@ -2,9 +2,11 @@
   "item.netheriteextras.enchanted_netherite_apple": "Verzauberter Netheritapfel",
   "item.netheriteextras.netherite_apple": "Netheritapfel",
   "item.netheriteextras.netherite_nugget": "Netheritklumpen",
-  "item.netheriteextras.netherite_horse_armor": "Netherit-Pferdeharnisch",
+  "item.netheriteextras.netherite_horse_armor": "Netherit-Rossharnisch",
   "item.netheriteextras.netherite_wolf_armor": "Netherit-Wolfspanzer",
-  "item.netheriteextras.totem_of_neverdying": "Totem des Niemalssterbens",
+  "item.netheriteextras.totem_of_neverdying": "Totem der Nimmersterblichkeit",
+  "tag.item.c.nuggets.netherite": "Netheritklumpen",
+  "tag.item.netheriteextras.repairs_netherite_equipment": "Netherit-Reparaturmaterialien",
   "text.config.netheriteextras.title": "Netherite Extras",
   "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance": "Chance auf Netheritklumpen beim Tod von Piglin-Barbaren",
   "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance.tooltip": "Chance, dass Piglin-Barbaren beim Tod durch einen Spieler einen Netheritklumpen fallen lassen"

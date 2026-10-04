@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:golden_apple",
+  "addition": "netheriteextras:netherite_nugget",
+  "result": {
+    "id": "netheriteextras:netherite_apple"
+  }
+}
