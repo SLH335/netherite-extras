@@ -34,6 +34,8 @@ Most of the additions are quite powerful, but also very expensive. This makes th
 ---
 
 ### Netherite Horse Armor
+*Only for MC <=1.21.1 mod releases. Vanilla 1.21.11 added its own Netherite Horse Armor.*
+
 - Upgrade Diamond Horse Armor to Netherite in the Smithing Table
 - More protection from all damage sources, especially lava damage
 - Item is fireproof

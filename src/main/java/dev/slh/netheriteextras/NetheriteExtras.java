@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import dev.slh.netheriteextras.fabric.ModCreativeTabs;
 import dev.slh.netheriteextras.fabric.ModDefaultComponents;
 import dev.slh.netheriteextras.fabric.ModLootTables;
+import dev.slh.netheriteextras.fabric.ModRegistryAliases;
 import dev.slh.netheriteextras.item.ModItems;
 
 public class NetheriteExtras implements ModInitializer {
@@ -22,6 +23,7 @@ public class NetheriteExtras implements ModInitializer {
 		LOGGER.info("Initializing Netherite Extras...");
 
 		ModItems.initialize();
+		ModRegistryAliases.initialize();
 		ModCreativeTabs.initialize();
 		ModDefaultComponents.initialize();
 		ModLootTables.initialize();
