@@ -3,10 +3,12 @@ package dev.slh.netheriteextras;
 import net.minecraft.resources.Identifier;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import dev.slh.netheriteextras.config.ServerConfig;
 import dev.slh.netheriteextras.fabric.ModCreativeTabs;
 import dev.slh.netheriteextras.fabric.ModDefaultComponents;
 import dev.slh.netheriteextras.fabric.ModLootTables;
@@ -22,6 +24,7 @@ public class NetheriteExtras implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing Netherite Extras...");
 
+		ServerConfig.initialize(FabricLoader.getInstance().getConfigDir());
 		ModItems.initialize();
 		ModRegistryAliases.initialize();
 		ModCreativeTabs.initialize();

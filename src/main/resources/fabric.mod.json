@@ -20,6 +20,9 @@
     ],
     "client": [
       "dev.slh.netheriteextras.client.NetheriteExtrasClient"
+    ],
+    "modmenu": [
+      "dev.slh.netheriteextras.client.fabric.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -33,7 +36,8 @@
     "fabricloader": ">=0.19.5",
     "minecraft": "~26.3",
     "java": ">=25",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "yet_another_config_lib_v3": ">=3.9.7"
   },
   "suggests": {
     "modmenu": "*"

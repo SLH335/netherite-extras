@@ -4,9 +4,13 @@
   "item.netheriteextras.netherite_nugget": "Netherite Nugget",
   "item.netheriteextras.netherite_wolf_armor": "Netherite Wolf Armor",
   "item.netheriteextras.totem_of_neverdying": "Totem of Neverdying",
+  "modmenu.descriptionTranslation.netheriteextras": "Adds more uses for Netherite.",
   "tag.item.c.nuggets.netherite": "Netherite Nuggets",
   "tag.item.netheriteextras.repairs_netherite_equipment": "Netherite Repair Materials",
   "text.config.netheriteextras.title": "Netherite Extras",
-  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance": "Piglin Brute Netherite Nugget Drop Chance",
-  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance.tooltip": "Chance of Piglin Brutes dropping a Netherite Nugget when killed by a player"
+  "text.config.netheriteextras.category.unavailable": "Server Options",
+  "text.config.netheriteextras.unavailable": "These options are set by the server you are playing on. They can only be changed in singleplayer, or by editing config/netheriteextras/server.json5 on the server.",
+  "yacl3.config.netheriteextras:server.category.server": "Server Options",
+  "yacl3.config.netheriteextras:server.piglinBruteNetheriteNuggetDropChance": "Brute Nugget Drop Chance",
+  "yacl3.config.netheriteextras:server.piglinBruteNetheriteNuggetDropChance.desc": "Chance of Piglin Brutes dropping a Netherite Nugget when killed by a player"
 }

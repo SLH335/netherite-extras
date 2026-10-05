@@ -4,9 +4,13 @@
   "item.netheriteextras.netherite_nugget": "Netheritklumpen",
   "item.netheriteextras.netherite_wolf_armor": "Netherit-Wolfspanzer",
   "item.netheriteextras.totem_of_neverdying": "Totem der Nimmersterblichkeit",
+  "modmenu.descriptionTranslation.netheriteextras": "Fügt weitere Verwendungen für Netherit hinzu.",
   "tag.item.c.nuggets.netherite": "Netheritklumpen",
   "tag.item.netheriteextras.repairs_netherite_equipment": "Netherit-Reparaturmaterialien",
   "text.config.netheriteextras.title": "Netherite Extras",
-  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance": "Chance auf Netheritklumpen beim Tod von Piglin-Barbaren",
-  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance.tooltip": "Chance, dass Piglin-Barbaren beim Tod durch einen Spieler einen Netheritklumpen fallen lassen"
+  "text.config.netheriteextras.category.unavailable": "Server-Optionen",
+  "text.config.netheriteextras.unavailable": "Diese Optionen werden vom Server vorgegeben, auf dem du spielst. Ändern kannst du sie nur im Einzelspieler oder direkt in der Datei config/netheriteextras/server.json5 auf dem Server.",
+  "yacl3.config.netheriteextras:server.category.server": "Server-Optionen",
+  "yacl3.config.netheriteextras:server.piglinBruteNetheriteNuggetDropChance": "Klumpenchance bei Barbaren",
+  "yacl3.config.netheriteextras:server.piglinBruteNetheriteNuggetDropChance.desc": "Chance, dass Piglin-Barbaren beim Tod durch einen Spieler einen Netheritklumpen fallen lassen"
 }

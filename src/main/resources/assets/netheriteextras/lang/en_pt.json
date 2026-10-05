@@ -4,9 +4,13 @@
   "item.netheriteextras.netherite_nugget": "Doubloon o' Blackbeard's alloy",
   "item.netheriteextras.netherite_wolf_armor": "Blackbeard's hound's clothin'",
   "item.netheriteextras.totem_of_neverdying": "Jewel o' neverendin' life",
+  "modmenu.descriptionTranslation.netheriteextras": "Be findin' more uses fer Blackbeard's alloy.",
   "tag.item.c.nuggets.netherite": "Doubloons o' Blackbeard's alloy",
   "tag.item.netheriteextras.repairs_netherite_equipment": "Fixin's fer Blackbeard's alloy",
   "text.config.netheriteextras.title": "Netherite Extras",
-  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance": "Odds o' Piglin squire alloy doubloons",
-  "text.config.netheriteextras.option.piglinBruteNetheriteNuggetDropChance.tooltip": "Th' odds that a Piglin squire be droppin' a doubloon o' Blackbeard's alloy when ye cut 'em in half"
+  "text.config.netheriteextras.category.unavailable": "Ship's scribble",
+  "text.config.netheriteextras.unavailable": "These scribbles be set by th' ship ye be sailin' on. Ye can only change 'em on a lonely voyage, o' by writin' in th' scribble file config/netheriteextras/server.json5 aboard th' ship.",
+  "yacl3.config.netheriteextras:server.category.server": "Ship's scribble",
+  "yacl3.config.netheriteextras:server.piglinBruteNetheriteNuggetDropChance": "Odds o' squire doubloons",
+  "yacl3.config.netheriteextras:server.piglinBruteNetheriteNuggetDropChance.desc": "Th' odds that a Piglin squire be droppin' a doubloon o' Blackbeard's alloy when ye cut 'em in half"
 }

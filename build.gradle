@@ -10,6 +10,11 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {
+		name = 'Xander Maven'
+		url = 'https://maven.isxander.dev/releases'
+	}
+
+	maven {
 		name = 'TerraformersMC'
 		url = 'https://maven.terraformersmc.com/releases'
 	}
@@ -34,7 +39,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	// Dev only: Mod Menu to confirm mod is loaded and test config screen
+	// YACL for the config screen and file
+	implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
+
+	// Dev only: Mod Menu to confirm the mod is loaded and to test the config screen
+	clientCompileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 	localRuntime "com.terraformersmc:modmenu:${project.modmenu_version}"
 }
 
