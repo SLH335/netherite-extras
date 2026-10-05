@@ -3,6 +3,8 @@ plugins {
 	id 'maven-publish'
 }
 
+version = "${project.mod_version}+mc${project.minecraft_version}"
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
