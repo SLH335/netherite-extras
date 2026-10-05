@@ -4,7 +4,7 @@ A mod that adds more uses for Netherite while trying to stay balanced.
 
 Most of the additions are quite powerful, but also very expensive. This makes them ideal for the Late Game.
 
-<a href="https://modrinth.com/mod/fabric-api"><img alt="Fabric API" src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API"></a>
+<a href="https://modrinth.com/mod/fabric-api"><img alt="Requires Fabric API" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/requires/fabric-api_vector.svg"></a>
 
 <a href="https://modrinth.com/mod/netherite-extras"><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/netherite-extras?style=for-the-badge&logo=modrinth&label=Modrinth" title="Modrinth Downloads"></a>
 <a href="https://www.curseforge.com/minecraft/mc-mods/netherite-extras"><img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/1079904?style=for-the-badge&logo=curseforge&label=CurseForge"></a>
